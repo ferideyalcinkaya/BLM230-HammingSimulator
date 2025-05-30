@@ -25,8 +25,8 @@ Swing tabanlı bir uygulama ile m-bit uzunluğundaki ikili diziyi alıp Hamming 
 🛠️ Kurulum & Çalıştırma
 
 1. Java 8 veya üstü yüklü olmalı.
-2. Proje klasöründe terminal/konsol açın:
-  cd /path/to/BLM230-HammingSimulator
+2. Terminal veya komut satırını açıp, projenin bulunduğu klasöre gidin. Örnek yollar:
+  Windows: cd C:\Users\KullaniciAdiniz\Projeler\BLM230-HammingSimulator
    
 3. Derleme:
    javac mimari/*.java
