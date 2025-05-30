@@ -19,7 +19,7 @@ Swing tabanlı bir uygulama ile m-bit uzunluğundaki ikili diziyi alıp Hamming 
 * Error Injection: Spinner ile seçilen pozisyondaki biti bozar; hata uygulanmış bit kırmızı kenarlıklı gösterilir.
 * Decode:
 
-  * Tek Hata: Sendrom ile hatayı tespit edip düzeltir, düzeltme pozisyonunu ve orijinal veriyi yeşil kenarlıklı show eder.
+  * Tek Hata: Sendrom ile hatayı tespit edip düzeltir, düzeltme pozisyonunu ve orijinal veriyi yeşil kenarlıklı gösterir.
   * Çift Hata:"Double Error Detected! Cannot correct." uyarısı verir.
 
 🛠️ Kurulum & Çalıştırma
