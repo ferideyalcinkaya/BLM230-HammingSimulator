@@ -4,7 +4,7 @@ Hamming SEC-DED Simulator
 
 BLM230 Dönem Projesi
 
-Öğrenci: Feride Saygı Yalçınkaya 22360859064
+Öğrenci: Feride Saygı Yalçınkaya-22360859064
 
 
 
@@ -62,8 +62,8 @@ Swing tabanlı bir uygulama ile m-bit uzunluğundaki ikili diziyi alıp Hamming 
 
 🌐 Linkler
 
-GitHub Repo:** [https://github.com/KullaniciAdin/BLM230-HammingSimulator](https://github.com/KullaniciAdin/BLM230-HammingSimulator)
-Demo Video:** [https://youtu.be/VideoLinkin](https://youtu.be/VideoLinkin)
+GitHub Repo: [https://github.com/KullaniciAdin/BLM230-HammingSimulator](https://github.com/ferideyalcinkaya/BLM230-HammingSimulator)
+Demo Video: [https://youtu.be/VideoLinkin](https://youtu.be/VideoLinkin)
 
 
 
