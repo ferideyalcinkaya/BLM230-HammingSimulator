@@ -21,6 +21,12 @@ Swing tabanlı bir uygulama ile m-bit uzunluğundaki ikili diziyi alıp Hamming 
 
   * Tek Hata: Sendrom ile hatayı tespit edip düzeltir, düzeltme pozisyonunu ve orijinal veriyi yeşil kenarlıklı gösterir.
   * Çift Hata:"Double Error Detected! Cannot correct." uyarısı verir.
+ 
+  Dosya Yapısı
+
+- `README.md` – Proje açıklamaları ve yönergeler.
+- `src/mimari/` – Java kaynak kodları (HammingCode.java, Main.java, MainUI.java).
+- `.gitignore` – Proje için yoksayılacak dosyalar.
 
 🛠️ Kurulum & Çalıştırma
 
