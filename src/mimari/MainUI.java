@@ -1,4 +1,4 @@
-
+package mimari;
 
 import javax.swing.*;
 import javax.swing.SpinnerNumberModel;
