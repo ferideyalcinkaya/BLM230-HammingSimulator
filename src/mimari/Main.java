@@ -1,4 +1,4 @@
-
+package mimari;
 
 import java.util.Arrays;
 
