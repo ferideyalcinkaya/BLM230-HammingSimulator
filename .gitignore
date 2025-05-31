@@ -1,0 +1,20 @@
+yok sayılacak dosyalar:
+# Eclipse ve IDE ayar dosyaları
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Derlenmiş class dosyaları ve bin klasörü
+*.class
+/bin/
+
+# Windows geçici dosyaları
+Thumbs.db
+desktop.ini
+
+# OneDrive temp dosyaları
+~*
