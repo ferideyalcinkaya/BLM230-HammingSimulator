@@ -1,6 +1,7 @@
 
-
+package mimari;
 import java.util.Arrays;
+import javax.swing.*;   
 
 public class Main {
 
