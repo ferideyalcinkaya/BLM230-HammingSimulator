@@ -38,9 +38,14 @@ Swing tabanlı bir uygulama ile m-bit uzunluğundaki ikili diziyi alıp Hamming 
    javac mimari/*.java
    
 4. Çalıştırma:
-   java mimari.MainUI
-   
+  a)Depoyu klonlayın:
+   ```bash
+   git clone https://github.com/ferideyalcinkaya/BLM230-HammingSimulator.git
+  b)src/mimari içindeki .java dosyalarını bir Java IDE’sine (Eclipse, IntelliJ, VS Code) aktarın.
 
+  c)Projeyi derleyip çalıştırın:
+   Simülatörü (GUI’yi) çalıştırmak için iki yöntem kullanabilirsiniz: Komut satırıyla (CMD) veya bir IDE (Eclipse/IntelliJ) üzerinden. 
+   
  📋 Kullanım
 
 1. Load to Memory: `Veri (binary)` alanına ikili diziyi yazıp tıklayın.
