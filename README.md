@@ -10,7 +10,7 @@ BLM230 Dönem Projesi
 
  📜 Proje Açıklaması
 
-Swing tabanlı bir uygulama ile m-bit uzunluğundaki ikili diziyi alıp Hamming SEC-DED (Single Error Correction, Double Error Detection) kod kelimesine dönüştüren, tek hatayı düzelten ve çift hatayı tespit eden bir simülatör geliştirdik.
+Swing tabanlı bir uygulama ile m-bit uzunluğundaki ikili diziyi alıp Hamming SEC-DED (Single Error Correction, Double Error Detection) kod kelimesine dönüştüren, tek hatayı düzelten ve çift hatayı tespit eden bir simülatör geliştirdim.
 
  ⚙️ Özellikler
 
