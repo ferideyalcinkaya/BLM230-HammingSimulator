@@ -76,6 +76,5 @@ Swing tabanlı bir uygulama ile m-bit uzunluğundaki ikili diziyi alıp Hamming 
 GitHub Repo: [https://github.com/KullaniciAdin/BLM230-HammingSimulator](https://github.com/ferideyalcinkaya/BLM230-HammingSimulator)
 Demo Video: [https://youtu.be/VideoLinkin](https://www.youtube.com/watch?v=tKnc9bJZdtg)
 
+[📄 Proje Raporu (PDF) indirmek için tıklayın](./BLM230_Proje_Feride_Yalcinkaya.pdf)
 
-
-Dosya: `BLM230_Proje_AdSoyad_12345678.pdf` dokümanı için referans README.
