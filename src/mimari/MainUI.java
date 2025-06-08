@@ -37,6 +37,11 @@ public class MainUI {
         top.add(loadBtn);
         JButton encodeBtn = new JButton("Encode");
         top.add(encodeBtn);
+
+        // === YENİ: Hamming Code Nasıl Oluşur? butonu ===
+        JButton explainBtn = new JButton("Hamming Code Nasıl Oluşur?");
+        top.add(explainBtn);
+
         frame.add(top, BorderLayout.NORTH);
 
         // Memory panel
@@ -85,6 +90,9 @@ public class MainUI {
         });
 
         decodeBtn.addActionListener(e -> onDecode());
+
+        // === YENİ: Açıklama butonu ===
+        explainBtn.addActionListener(e -> showHammingExplanation());
 
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
@@ -214,6 +222,46 @@ public class MainUI {
         StringBuilder sb = new StringBuilder();
         for (int b : arr) sb.append(b);
         return sb.toString();
+    }
+
+    // === YENİ: Açıklama Penceresi ===
+    private void showHammingExplanation() {
+        if (hc == null) {
+            JOptionPane.showMessageDialog(frame, "Önce Load to Memory yapın!", "Uyarı", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("🔎 Hamming Kod Oluşumu (SEC-DED)\n");
+        sb.append("──────────────────────────────\n");
+        sb.append("1. Kullanıcının girdiği veri: ").append(hc.getDataBitCount()).append(" bit\n");
+        sb.append("2. Parity bit sayısı: ").append(hc.getParityBitCount()).append("\n");
+        sb.append("3. Toplam kod uzunluğu (veri+parity+overall): ").append(hc.getTotalCodeLength()).append("\n\n");
+        sb.append("📌 Parity bitleri her zaman 2^k pozisyonuna (1, 2, 4, 8...) yerleştirilir.\n\n");
+        sb.append("Her parity biti, aşağıdaki pozisyonlardaki bitleri kontrol eder:\n");
+        for (int p = 0; p < hc.getParityBitCount(); p++) {
+            int pPos = (1 << p);
+            sb.append("- Parity Bit ").append(p + 1)
+              .append(" (Pozisyon ").append(pPos).append("): ");
+            for (int i = 1; i < hc.getTotalCodeLength(); i++) {
+                if (((i + 1) & pPos) != 0) {
+                    sb.append(i + 1).append(" ");
+                }
+            }
+            sb.append("\n");
+        }
+        sb.append("\n🔹 Parity bitlerinin hesaplanması:\n");
+        sb.append("Her parity biti, kontrol ettiği bitlerin değerinin toplamı çiftse 0, tekse 1 olur.\n\n");
+        sb.append("🔹 Son bit (overall parity), kodun tamamındaki 1'lerin toplamının çift/tek olmasına göre belirlenir.\n");
+        sb.append("Bu sayede tek hata düzeltilir, çift hata algılanır.\n");
+
+        JTextArea explainText = new JTextArea(sb.toString());
+        explainText.setEditable(false);
+        explainText.setLineWrap(true);
+        explainText.setWrapStyleWord(true);
+        JScrollPane scrollPane = new JScrollPane(explainText);
+        scrollPane.setPreferredSize(new Dimension(400, 320));
+
+        JOptionPane.showMessageDialog(frame, scrollPane, "Hamming Code Nasıl Oluşur?", JOptionPane.INFORMATION_MESSAGE);
     }
 
     public static void main(String[] args) {
